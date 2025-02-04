@@ -9,7 +9,7 @@ The SDK relies on the Amplify for Swift Core Library and is developed according 
 Visit our [Documentation site](https://awslabs.github.io/clickstream-analytics-on-aws/en/latest/sdk-manual/swift/) and to learn more about Clickstream Swift SDK.
 
 ### Platform Support
-
+    
 The Clickstream SDK supports iOS 13+.
 
 [**API Documentation**](https://awslabs.github.io/clickstream-swift/) 
@@ -22,7 +22,7 @@ Clickstream requires Xcode 13.4 or higher to build.
 
 ### 1.Add Package
 
-We use **Swift Package Manager** to distribute Clickstream Swift SDK, open your project in Xcode and select **File > Add Pckages**.
+We use **Swift Package Manager** to distribute Clickstream Swift SDK, open your project in Xcode and select **File > Add Packages**.
 
 ![](images/add_package.png)
 
@@ -303,7 +303,7 @@ ClickstreamAnalytics.disable()
 ClickstreamAnalytics.enable()
 ```
 
-## How to build&test locally
+## How to build & test locally
 
 ### Config your code format
 
@@ -338,3 +338,7 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 ## License
 
 This library is licensed under [Apache 2.0 License](./LICENSE).
+
+## Anonymous operational metrics
+
+This solution collects anonymous operational metrics to help AWS improve the quality and features of the solution. For more information, including how to disable this capability, please see the [implementation guide](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/solution-overview.html).

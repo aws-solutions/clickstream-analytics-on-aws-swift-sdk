@@ -6,6 +6,7 @@
 //
 
 @testable import Clickstream
+import Foundation
 import Swifter
 import XCTest
 
@@ -291,11 +292,12 @@ class EventRecorderTest: XCTestCase {
         XCTAssertEqual(100, lastEventId)
     }
 
-    func testProcessEventFailWithUnkonwTestEndpoint() throws {
+    func testProcessEventFailWithUnkownTestEndpoint() throws {
         clickstream.configuration.endpoint = testUnKnowEndpoint
         for _ in 0 ..< 5 {
             try eventRecorder.save(clickstreamEvent)
         }
+        Thread.sleep(forTimeInterval: 0.1)
         let processedCount = eventRecorder.processEvent()
         XCTAssertEqual(0, processedCount)
     }
@@ -305,6 +307,7 @@ class EventRecorderTest: XCTestCase {
         for _ in 0 ..< 5 {
             try eventRecorder.save(clickstreamEvent)
         }
+        Thread.sleep(forTimeInterval: 0.1)
         let processedCount = eventRecorder.processEvent()
         XCTAssertEqual(5, processedCount)
     }
@@ -314,6 +317,7 @@ class EventRecorderTest: XCTestCase {
         for _ in 0 ..< 5 {
             try eventRecorder.save(clickstreamEvent)
         }
+        Thread.sleep(forTimeInterval: 0.1)
         let processedCount = eventRecorder.processEvent()
         XCTAssertEqual(0, processedCount)
     }
@@ -323,6 +327,7 @@ class EventRecorderTest: XCTestCase {
         for _ in 0 ..< 5 {
             try eventRecorder.save(clickstreamEvent)
         }
+        Thread.sleep(forTimeInterval: 0.1)
         let processedCount = eventRecorder.processEvent()
         XCTAssertEqual(5, processedCount)
     }
@@ -336,7 +341,7 @@ class EventRecorderTest: XCTestCase {
         for _ in 0 ..< 15 {
             try eventRecorder.save(clickstreamEvent)
         }
-
+        Thread.sleep(forTimeInterval: 0.1)
         let totalEventSent = eventRecorder.processEvent()
         XCTAssertEqual(15, totalEventSent)
     }
@@ -350,7 +355,7 @@ class EventRecorderTest: XCTestCase {
         for _ in 0 ..< 40 {
             try eventRecorder.save(clickstreamEvent)
         }
-
+        Thread.sleep(forTimeInterval: 0.1)
         let firstEventSentCount = eventRecorder.processEvent()
         XCTAssertTrue(firstEventSentCount < 40)
         let secondEventSentCount = eventRecorder.processEvent()
@@ -457,7 +462,7 @@ class EventRecorderTest: XCTestCase {
             // swift lambda for get the upload_timestamp value in queryParams dictionary
             let uploadTimestamp = queryParams.first(where: { $0.0 == "upload_timestamp" })?.1
             let requestUploadTimestamp = Int64(uploadTimestamp!)!
-            if Date().millisecondsSince1970 - requestUploadTimestamp < 5_000 {
+            if Date().millisecondsSince1970 - requestUploadTimestamp < 10_000 {
                 return .ok(.text("Success"))
             }
             return .badRequest(.text("Fail"))

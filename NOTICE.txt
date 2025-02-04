@@ -1,0 +1,43 @@
+Clickstream Analytics on AWS Swift SDK
+
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+Licensed under the Apache License Version 2.0 (the "License"). You may not use this file except
+in compliance with the License. A copy of the License is located at http://www.apache.org/licenses/
+or in the "license" file accompanying this file. This file is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, express or implied. See the License for the
+specific language governing permissions and limitations under the License.
+
+**********************
+THIRD PARTY COMPONENTS
+**********************
+
+This software includes third party software subject to the following copyrights:
+
+Appium-Python-Client under the Apache-2.0 license.
+pytest under the MIT license.
+boto3 under the Apache-2.0 license.
+requests under the Apache-2.0 license.
+PyYAML under the MIT license.
+pytest-html under the MIT license.
+selenium under the Apache-2.0 license.
+github.com/aws-amplify/amplify-swift under the Apache-2.0 license.
+github.com/aws-amplify/amplify-swift-utils-notifications under the Apache-2.0 license.
+github.com/aws-amplify/aws-appsync-realtime-client-ios under the Apache-2.0 license.
+github.com/awslabs/aws-crt-swift under the Apache-2.0 license.
+github.com/awslabs/aws-sdk-swift under the Apache-2.0 license.
+github.com/1024jp/GzipSwift under the MIT license.
+github.com/awslabs/smithy-swift under the Apache-2.0 license.
+github.com/stephencelis/SQLite.swift under the MIT license.
+github.com/daltoniam/Starscream under the Apache-2.0 license.
+github.com/apple/swift-collections under the Apache-2.0 license.
+github.com/apple/swift-log under the Apache-2.0 license.
+github.com/httpswift/swifter under the BSD-3-Clause license.
+github.com/MaxDesiatov/XMLCoder under the MIT license.
+
+********************
+OPEN SOURCE LICENSES
+********************
+
+Apache-2.0 - https://spdx.org/licenses/Apache-2.0.html
+MIT - https://spdx.org/licenses/MIT.html
+BSD-3-Clause - https://spdx.org/licenses/BSD-3-Clause.html

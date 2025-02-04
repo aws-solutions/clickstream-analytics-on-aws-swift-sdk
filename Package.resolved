@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/aws-amplify/amplify-swift-utils-notifications.git",
       "state" : {
-        "revision" : "d4fd3c17e8d40efc821f448d3d6cff75b8f3b0dd",
-        "version" : "1.0.0"
+        "revision" : "959eec669ba97c7d923b963c3e66ca8a0b2737f6",
+        "version" : "1.1.1"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/aws-amplify/aws-appsync-realtime-client-ios.git",
       "state" : {
-        "revision" : "3de274c68a3cb60c8aec18b5bc0a8c07860219cd",
-        "version" : "3.0.0"
+        "revision" : "9fd77b043e06193848a68740dfde0836648b2b4e",
+        "version" : "3.2.0"
       }
     },
     {
@@ -77,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/daltoniam/Starscream",
       "state" : {
-        "revision" : "df8d82047f6654d8e4b655d1b1525c64e1059d21",
-        "version" : "4.0.4"
+        "revision" : "c6bfd1af48efcc9a9ad203665db12375ba6b145a",
+        "version" : "4.0.8"
       }
     },
     {
@@ -86,8 +86,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-collections",
       "state" : {
-        "revision" : "937e904258d22af6e447a0b72c0bc67583ef64a2",
-        "version" : "1.0.4"
+        "revision" : "671108c96644956dddcd89dd59c203dcdb36cec7",
+        "version" : "1.1.4"
       }
     },
     {
@@ -95,8 +95,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-log.git",
       "state" : {
-        "revision" : "32e8d724467f8fe623624570367e3d50c5638e46",
-        "version" : "1.5.2"
+        "revision" : "96a2f8a0fa41e9e09af4585e2724c4e825410b91",
+        "version" : "1.6.2"
       }
     },
     {
@@ -113,8 +113,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/MaxDesiatov/XMLCoder.git",
       "state" : {
-        "revision" : "c438dad94f6a243b411b70a4b4bac54595064808",
-        "version" : "0.15.0"
+        "revision" : "b1e944cbd0ef33787b13f639a5418d55b3bed501",
+        "version" : "0.17.1"
       }
     }
   ],
