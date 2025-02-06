@@ -1,6 +1,6 @@
 module: Clickstream
 author: Amazon Web Services
-github_url: https://github.com/awslabs/clickstream-swift
+github_url: https://github.com/aws-solutions/clickstream-analytics-on-aws-swift-sdk
 
 swift-build-tool: spm
 clean: true
