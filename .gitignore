@@ -1,6 +1,6 @@
 .DS_Store
-/.build
-/Packages
+.build/
+Packages
 /*.xcodeproj
 xcuserdata/
 DerivedData/
@@ -8,3 +8,7 @@ DerivedData/
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 .netrc
 .idea
+deployment/open-source/
+deployment/global-s3-assets/
+deployment/regional-s3-assets/
+.vscode/

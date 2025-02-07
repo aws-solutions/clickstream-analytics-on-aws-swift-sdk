@@ -2,19 +2,19 @@
 
 ## Introduction
 
-Clickstream Swift SDK can help you easily collect and report in-app events from iOS devices to AWS. This SDK is part of an AWS solution - [Clickstream Analytics on AWS](https://github.com/awslabs/clickstream-analytics-on-aws), which provisions data pipeline to ingest and process event data into AWS services such as S3, Redshift.
+Clickstream Swift SDK can help you easily collect and report in-app events from iOS devices to AWS. This SDK is part of an AWS solution - [Clickstream Analytics on AWS](https://github.com/aws-solutions/clickstream-analytics-on-aws), which provisions data pipeline to ingest and process event data into AWS services such as S3, Redshift.
 
 The SDK relies on the Amplify for Swift Core Library and is developed according to the Amplify Swift SDK plug-in specification. In addition, we've added features that automatically collect common user events and attributes (e.g., screen view, first open) to simplify data collection for users.
 
-Visit our [Documentation site](https://awslabs.github.io/clickstream-analytics-on-aws/en/latest/sdk-manual/swift/) and to learn more about Clickstream Swift SDK.
+Visit our [Documentation site](https://aws-solutions.github.io/clickstream-analytics-on-aws/en/latest/sdk-manual/swift/) and to learn more about Clickstream Swift SDK.
 
 ### Platform Support
-
+    
 The Clickstream SDK supports iOS 13+.
 
-[**API Documentation**](https://awslabs.github.io/clickstream-swift/) 
+[**API Documentation**](https://aws-solutions.github.io/clickstream-analytics-on-aws-swift-sdk/) 
 
-- [Objective-C API Reference](https://awslabs.github.io/clickstream-swift/Classes/ClickstreamObjc.html)
+- [Objective-C API Reference](https://aws-solutions.github.io/clickstream-analytics-on-aws-swift-sdk/Classes/ClickstreamObjc.html)
 
 ## Integrate SDK
 
@@ -22,11 +22,11 @@ Clickstream requires Xcode 13.4 or higher to build.
 
 ### 1.Add Package
 
-We use **Swift Package Manager** to distribute Clickstream Swift SDK, open your project in Xcode and select **File > Add Pckages**.
+We use **Swift Package Manager** to distribute Clickstream Swift SDK, open your project in Xcode and select **File > Add Packages**.
 
 ![](images/add_package.png)
 
-Enter the Clickstream Library for Swift GitHub repo URL (`https://github.com/awslabs/clickstream-swift`) into the search bar, you'll see the Clickstream Library for Swift repository rules for which version of Clickstream you want Swift Package Manager to install. Choose **Up to Next Major Version**, then click **Add Package**, make the Clickstream product checked as default, and click **Add Package** again.
+Enter the Clickstream Library for Swift GitHub repo URL (`https://github.com/aws-solutions/clickstream-swift`) into the search bar, you'll see the Clickstream Library for Swift repository rules for which version of Clickstream you want Swift Package Manager to install. Choose **Up to Next Major Version**, then click **Add Package**, make the Clickstream product checked as default, and click **Add Package** again.
 
 ![](images/add_package_url.png)
 
@@ -303,7 +303,7 @@ ClickstreamAnalytics.disable()
 ClickstreamAnalytics.enable()
 ```
 
-## How to build&test locally
+## How to build & test locally
 
 ### Config your code format
 
@@ -338,3 +338,7 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 ## License
 
 This library is licensed under [Apache 2.0 License](./LICENSE).
+
+## Anonymous operational metrics
+
+This solution collects anonymous operational metrics to help AWS improve the quality and features of the solution. For more information, including how to disable this capability, please see the [implementation guide](https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-on-aws/solution-overview.html).
